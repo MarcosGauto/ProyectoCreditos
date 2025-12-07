@@ -1,0 +1,27 @@
+{
+  "name": "analisis-credito",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix credito/frontend\" \"npm start --prefix credito/backend\"",
+    "frontend": "npm run dev --prefix credito/frontend",
+    "backend": "npm start --prefix credito/backend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "firebase": "^12.3.0",
+    "firebase-admin": "^13.5.0",
+    "git-filter-repo": "^0.0.30",
+    "jspdf": "^3.0.3",
+    "jspdf-autotable": "^5.0.2",
+    "papaparse": "^5.5.3",
+    "react-to-print": "^3.1.1",
+    "xlsx": "^0.18.5"
+  }
+}
